@@ -1,0 +1,93 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DNA Sequence Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🧬 DNA Sequence Analyzer</h1>
+
+        <p class="subtitle">
+            Analyze nucleotide composition of a DNA sequence
+        </p>
+
+        <label for="sequence">Enter DNA Sequence</label>
+
+        <textarea
+            id="sequence"
+            placeholder="Example: ATGCGTACCGTAGCTAGC">
+        </textarea>
+
+        <button onclick="analyzeSequence()">
+            Analyze Sequence
+        </button>
+
+        <div id="error"></div>
+
+        <div class="results">
+
+            <div class="box">
+                <h3>Length</h3>
+                <span id="length">0</span>
+            </div>
+
+            <div class="box">
+                <h3>A</h3>
+                <span id="aCount">0</span>
+            </div>
+
+            <div class="box">
+                <h3>T</h3>
+                <span id="tCount">0</span>
+            </div>
+
+            <div class="box">
+                <h3>G</h3>
+                <span id="gCount">0</span>
+            </div>
+
+            <div class="box">
+                <h3>C</h3>
+                <span id="cCount">0</span>
+            </div>
+
+            <div class="box">
+                <h3>GC Content</h3>
+                <span id="gc">0%</span>
+            </div>
+
+            <div class="box">
+                <h3>AT Content</h3>
+                <span id="at">0%</span>
+            </div>
+
+        </div>
+
+        <div class="sequence-info">
+
+            <h2>Sequence</h2>
+
+            <p id="cleanSequence">
+                No sequence analyzed yet.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
